@@ -3,6 +3,7 @@
     <div id="nav">
       <router-link to="/home">Home</router-link>
       <router-link to="/about">About</router-link>
+      <search/>
     </div>
     <router-view/>
   </div>
@@ -11,3 +12,10 @@
 <style lang="scss">
 
 </style>
+<script>
+  import Search from './views/Search';
+
+  export default {
+    components: {Search}
+  }
+</script>
